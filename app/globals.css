@@ -7,7 +7,7 @@ Secondary color: #4F46E5
 Background color: #0D0F1A 
 Text color: #F5F5F5 */
 
-body {
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body a {
   font-family: "Poppins", sans-serif;
   color: #F5F5F5;
 }

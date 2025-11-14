@@ -26,7 +26,7 @@ export default function MainNavbar() {
           </li>
         </ul>
         <div className="cv-btn flex py-7">
-          <button className="cursor-pointer font-medium w-[120px] rounded-2xl bg-[#6366F1] hover:bg-[#4F46E5] px-4">Get My CV</button>
+          <button className="cursor-pointer text-[#f5f5f5] font-medium w-[140px] rounded-2xl bg-[#4F46E5] duration-300 hover:bg-[#6366F1] px-4">Download CV</button>
         </div>
       </nav>
     </div>

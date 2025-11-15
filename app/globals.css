@@ -7,18 +7,25 @@ Secondary color: #4F46E5
 Background color: #0D0F1A 
 Text color: #F5F5F5 */
 
-body h1, body h2, body h3, body h4, body h5, body h6, body p, body a {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p,
+body a {
   font-family: "Poppins", sans-serif;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 .main-page {
-  background: #0D0F1A;
+  background: #0d0f1a;
 }
 
 /* Navbar */
 .main-navbar {
-  background: transparent
+  background: transparent;
 }
 .nav-fonts {
   font-size: 18px;
@@ -28,8 +35,97 @@ body h1, body h2, body h3, body h4, body h5, body h6, body p, body a {
   transition: all 0.3s ease;
 }
 .nav-fonts:hover {
-  background: #4F46E5;
+  background: #4f46e5;
 }
 .nav-fonts.active {
-  background: #4F46E5;
+  background: #4f46e5;
+}
+
+/* Hero Section */
+.shape {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  background: #4f46e5;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 9;
+  overflow: hidden;
+  transform: translateZ(0);
+  animation: floatY 6s ease-in-out infinite;
+}
+/* pseudo elements untuk "lapisan" tambahan */
+.shape::before,
+.shape::after {
+  content: " ";
+  position: absolute;
+  will-change: transform, opacity;
+  filter: blur(10px);
+  opacity: 1;
+  pointer-events: none;
+}
+/* bulatan lembut di kiri atas */
+.shape::before {
+  width: 120px;
+  height: 120px;
+  left: -40px;
+  top: -40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  transform: translateY(0) rotate(0deg);
+  animation: floatX 8s ease-in-out infinite;
+}
+/* segitiga / diamond di kanan bawah */
+.shape::after {
+  width: 120px;
+  height: 120px;
+  right: -40px;
+  bottom: -40px;
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+  transform: rotate(25deg);
+  animation: rotateFloat 10s linear infinite;
+}
+/* Animations */
+@keyframes floatY {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes floatX {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: translateX(18px) translateY(-10px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+@keyframes rotateFloat {
+  0% {
+    transform: rotate(25deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(205deg) translateY(-10px);
+  }
+  100% {
+    transform: rotate(25deg) translateY(0px);
+  }
+}
+.image-section {
+  box-shadow: 0px 0px 75px 10px rgba(79, 70, 229, 0.75);
+  -webkit-box-shadow: 0px 0px 75px 10px rgba(79, 70, 229, 0.75);
+  -moz-box-shadow: 0px 0px 75px 10px rgba(79, 70, 229, 0.75);
 }

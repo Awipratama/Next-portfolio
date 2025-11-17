@@ -4,6 +4,7 @@ import "./globals.css";
 
 // Import Layout Tetap
 import MainNavbar from "@/layout/MainNavbar";
+import LeftSidebar from "@/layout/LeftSideBar";
 import { Main } from "next/document";
 
 const geistSans = Geist({
@@ -39,6 +40,8 @@ export default function RootLayout({
       >
         {/* Main Navigation */}
         <MainNavbar />
+        {/* Left Sidebar Social Media */}
+        <LeftSidebar />
         {children}
       </body>
     </html>

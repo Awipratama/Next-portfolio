@@ -1,12 +1,12 @@
 import FloatingShapes from "@/components/FloatingShapes";
+import About from "@/layout/About";
 
 export default function Home() {
   return (
-    <section className="home-section relative min-h-screen flex items-center">
-      <FloatingShapes />
-
+    <section className="home-section min-h-screen flex flex-col items-center">
       {/* Hero Section */}
-      <div className="flex main-page w-full min-h-screen items-center justify-center font-sans">
+      <div className="flex relative main-page w-full min-h-screen items-center justify-center font-sans">
+        <FloatingShapes />
         <main className="flex max-w-[1150px] min-h-screen w-full items-center justify-between py-32">
           <div className="text-section flex flex-col w-1/2 pr-10">
             <h1 className="text-[48px]/14 font-bold mb-6">
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="w-1/2">
             <img
               className="image-section rounded-full w-[80%] ml-auto"
-              src="/Images/profile-1.jpg"
+              src="/Images/profile-3.png"
               alt=""
             />
           </div>
@@ -34,6 +34,7 @@ export default function Home() {
         </main>
       </div>
       {/* End of Hero Section */}
+      <About />
     </section>
   );
 }

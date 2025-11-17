@@ -20,7 +20,7 @@ export default function LeftSidebar() {
 
       {/* Instagram */}
       <a
-        href="https://instagram.com/yourusername"
+        href="https://www.instagram.com/awipratama05/"
         target="_blank"
         className="group"
       >

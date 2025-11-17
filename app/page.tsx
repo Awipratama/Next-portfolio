@@ -1,10 +1,11 @@
-import Image from "next/image";
 import FloatingShapes from "@/components/FloatingShapes";
 
 export default function Home() {
   return (
-    <section className="relative min-h-screen flex items-center">
+    <section className="home-section relative min-h-screen flex items-center">
       <FloatingShapes />
+
+      {/* Hero Section */}
       <div className="flex main-page w-full min-h-screen items-center justify-center font-sans">
         <main className="flex max-w-[1150px] min-h-screen w-full items-center justify-between py-32">
           <div className="text-section flex flex-col w-1/2 pr-10">
@@ -32,6 +33,7 @@ export default function Home() {
           {/* <div className="shape"></div> */}
         </main>
       </div>
+      {/* End of Hero Section */}
     </section>
   );
 }

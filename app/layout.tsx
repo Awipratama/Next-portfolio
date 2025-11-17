@@ -3,9 +3,8 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
 // Import Layout Tetap
-import MainNavbar from "@/layout/MainNavbar";
-import LeftSidebar from "@/layout/LeftSideBar";
-import { Main } from "next/document";
+import MainNavbar from "@/components/MainNavbar";
+import LeftSidebar from "@/components/LeftSideBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -2,7 +2,7 @@
 
 export default function MainNavbar() {
   return (
-    <div className="main-navbar fixed flex justify-center w-full">
+    <div className="main-navbar fixed flex justify-center w-full z-99">
       <nav className="w-full max-w-[1150px] flex justify-between">
         <div className="logo py-2">
           <img

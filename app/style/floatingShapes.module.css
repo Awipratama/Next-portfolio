@@ -1,0 +1,80 @@
+.container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Base floating animation */
+.shape {
+  position: absolute;
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Zigzag */
+.zigzag {
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-duration: 10s;
+}
+
+/* Triangle */
+.triangle {
+  top: 60%;
+  left: 50%;
+  animation-duration: 8s;
+}
+
+/* Circle */
+.circle {
+  top: 15%;
+  right: 10%;
+  animation-duration: 9s;
+}
+
+/* Plus sign */
+.plus {
+  font-size: 42px;
+  font-weight: 300;
+  color: white;
+  top: 72%;
+  right: 8%;
+  animation-duration: 6s;
+}
+
+/* Square */
+.square {
+  top: 20%;
+  left: 10%;
+  animation-duration: 5s;
+  transform: rotate(15deg);
+}
+
+/* Diamond */
+.diamond {
+  bottom: 10%;
+  right: 35%;
+  animation-duration: 4s;
+}
+
+/* Wave line */
+.wave {
+  bottom: 15%;
+  left: 25%;
+  transform: translateX(-50%);
+  animation-duration: 7s;
+}
+
+/* Floating movement */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}

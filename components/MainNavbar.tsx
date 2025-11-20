@@ -1,8 +1,27 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export default function MainNavbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="main-navbar fixed flex justify-center w-full z-99">
+    <div
+      className={`main-navbar fixed flex justify-center w-full z-99 transition-all duration-300
+    ${isScrolled ? "nav-scrolled" : ""}`}
+    >
       <nav className="w-full max-w-[1150px] flex justify-between">
         <div className="logo py-2">
           <img
@@ -13,20 +32,30 @@ export default function MainNavbar() {
         </div>
         <ul className="flex justify-center gap-4 w-full items-center">
           <li>
-            <a className="nav-fonts active" href="#">Home</a>
+            <a className="nav-fonts active" href="#">
+              Home
+            </a>
           </li>
           <li>
-            <a className="nav-fonts" href="#">About Me</a>
+            <a className="nav-fonts" href="#">
+              About Me
+            </a>
           </li>
           <li>
-            <a className="nav-fonts" href="#">My Portfolio</a>
+            <a className="nav-fonts" href="#">
+              My Portfolio
+            </a>
           </li>
           <li>
-            <a className="nav-fonts" href="#">Contact Me</a>
+            <a className="nav-fonts" href="#">
+              Contact Me
+            </a>
           </li>
         </ul>
         <div className="cv-btn flex py-7">
-          <button className="cursor-pointer text-[#f5f5f5] font-medium w-[140px] rounded-2xl bg-[#4F46E5] duration-300 hover:bg-[#6366F1] px-4">Download CV</button>
+          <button className="cursor-pointer text-[#f5f5f5] font-medium w-[140px] rounded-2xl bg-[#4F46E5] duration-300 hover:bg-[#6366F1] px-4">
+            Download CV
+          </button>
         </div>
       </nav>
     </div>

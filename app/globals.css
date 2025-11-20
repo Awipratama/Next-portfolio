@@ -40,6 +40,14 @@ body a {
 .nav-fonts.active {
   background: #4f46e5;
 }
+.main-navbar.nav-scrolled {
+  background: #ffffff;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
 
 /* Hero Section */
 .shape {
@@ -71,7 +79,7 @@ body a {
   left: -40px;
   top: -40px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   transform: translateY(0) rotate(0deg);
   animation: floatX 8s ease-in-out infinite;
 }
@@ -131,4 +139,3 @@ body a {
 }
 
 /* About Section */
-

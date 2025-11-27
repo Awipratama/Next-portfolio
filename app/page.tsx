@@ -1,5 +1,6 @@
 import FloatingShapes from "@/components/FloatingShapes";
 import About from "@/layout/About";
+import Services from "@/layout/Services";
 
 export default function Home() {
   return (
@@ -34,7 +35,12 @@ export default function Home() {
         </main>
       </div>
       {/* End of Hero Section */}
+      {/* Start of About Section */}
       <About />
+      {/* End of About Section */}
+      {/* Start of Services Section */}
+      <Services />
+      {/* End of Services Section */}
     </section>
   );
 }

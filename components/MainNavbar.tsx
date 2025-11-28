@@ -37,7 +37,7 @@ export default function MainNavbar() {
             </a>
           </li>
           <li>
-            <a className="nav-fonts" href="#">
+            <a className="nav-fonts" href="#about">
               About Me
             </a>
           </li>

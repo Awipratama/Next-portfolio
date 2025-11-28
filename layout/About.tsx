@@ -2,8 +2,8 @@ import FloatingShapes2 from "@/components/FloatingShapes2";
 
 export default function About() {
   return (
-    <section className="about-section flex w-full min-h-screen items-center justify-center font-sans py-32 bg-[#0c1b3c]">
-      <div className="about-container max-w-[1150px] gap-10 flex">
+    <section id="about" className="about-section flex w-full min-h-screen items-center justify-center font-sans py-32 bg-[#0c1b3c]">
+      <div className="about-container max-w-[1150px] gap-10 flex my-10">
         <FloatingShapes2 />
         <div className="about-image relative flex items-center justify-center">
           <img

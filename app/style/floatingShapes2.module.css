@@ -61,7 +61,7 @@
 
 /* Wave line */
 .wave {
-  top: 1500px;
+  top: 1550px;
   left: 50%;
   transform: translateX(-50%);
   animation-duration: 7s;

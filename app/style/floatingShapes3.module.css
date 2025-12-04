@@ -13,23 +13,23 @@
 
 /* Zigzag */
 .zigzag {
-  top: 900px;
-  left: 70%;
+  top: 2270px;
+  right: 10%;
   transform: translateX(-50%);
   animation-duration: 10s;
 }
 
 /* Triangle */
 .triangle {
-  top: 1550px;
-  left: 20%;
+  top: 2250px;
+  left: 10%;
   animation-duration: 8s;
 }
 
 /* Circle */
 .circle {
-  top: 1500px;
-  right: 20%;
+  top: 1800px;
+  right: 30%;
   animation-duration: 9s;
 }
 
@@ -38,22 +38,22 @@
   font-size: 42px;
   font-weight: 300;
   color: white;
-  top: 1000px;
-  right: 8%;
+  top: 1850px;
+  right: 12%;
   animation-duration: 6s;
 }
 
 /* Square */
 .square {
-  top: 900px;
-  left: 5%;
+  top: 1800px;
+  left: 15%;
   animation-duration: 5s;
   transform: rotate(15deg);
 }
 
 /* Diamond */
 .diamond {
-  top: 950px;
+  top: 1750px;
   right: 50%;
   animation-duration: 4s;
   z-index: 99;
@@ -61,7 +61,7 @@
 
 /* Wave line */
 .wave {
-  top: 1550px;
+  top: 2300px;
   left: 50%;
   transform: translateX(-50%);
   animation-duration: 7s;

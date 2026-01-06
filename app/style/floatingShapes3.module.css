@@ -28,7 +28,7 @@
 
 /* Circle */
 .circle {
-  top: 1800px;
+  top: 1750px;
   right: 30%;
   animation-duration: 9s;
 }
@@ -53,7 +53,7 @@
 
 /* Diamond */
 .diamond {
-  top: 1750px;
+  top: 1700px;
   right: 50%;
   animation-duration: 4s;
   z-index: 99;
@@ -61,7 +61,7 @@
 
 /* Wave line */
 .wave {
-  top: 2300px;
+  top: 2200px;
   left: 50%;
   transform: translateX(-50%);
   animation-duration: 7s;

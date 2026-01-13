@@ -1,28 +1,26 @@
 "use client";
 
-import { useEffect } from "react";
-import { Carousel } from "flowbite";
+import { Carousel } from "react-responsive-carousel";
+import Image from "next/image";
+
+interface CarouselImage {
+  id: number;
+  src: string;
+  alt: string;
+}
+
+const images: CarouselImage[] = [
+  { id: 1, src: "/Images/ezzy.png", alt: "Ezzy Project" },
+  { id: 2, src: "/Images/ezzy.png", alt: "Ezzy Project" },
+  { id: 3, src: "/Images/ezzy.png", alt: "Ezzy Project" },
+  { id: 4, src: "/Images/ezzy.png", alt: "Ezzy Project" },
+  { id: 5, src: "/Images/ezzy.png", alt: "Ezzy Project" },
+];
 
 export default function Portfolio() {
-  useEffect(() => {
-    const carouselEl = document.getElementById("animation-carousel");
-
-    if (!carouselEl) return;
-
-    // Opsi carousel
-    const options = {
-      defaultPosition: 0,
-      interval: 3000, // autoplay
-    };
-
-    // Inisialisasi sesuai API Flowbite yang benar
-    // const carousel = new Carousel(carouselEl, options);
-
-    // carousel.cycle(); // Mulai autoplay
-  }, []);
   return (
-    <section className="portfolio bg-[#0c1b3c] w-full py-20">
-      <div className="portfolio-container mx-auto max-w-[1150px] w-full">
+    <section className="portfolio bg-[#0c1b3c] w-full pt-10">
+      <div className="portfolio-container mx-auto max-w-[1150px] my-10 w-full">
         <h2 className="text-3xl text-center font-bold mb-6">My Portfolio</h2>
         <div
           id="animation-carousel"
@@ -30,51 +28,26 @@ export default function Portfolio() {
           data-carousel="slide"
         >
           {/* Carousel wrapper */}
-          <div className="relative h-56 overflow-hidden rounded-base md:h-96">
-            {/* Item 1 */}
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <img
-                src="/Images/ezzy.png"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="Ezzy Project"
-              />
-            </div>
-            {/* Item 2 */}
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <img
-                src="/Images/ezzy.png"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="Ezzy Project"
-              />
-            </div>
-            {/* Item 3 */}
-            <div
-              className="hidden duration-200 ease-linear"
-              data-carousel-item="active"
-            >
-              <img
-                src="/Images/ezzy.png"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="Ezzy Project"
-              />
-            </div>
-            {/* Item 4 */}
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <img
-                src="/Images/ezzy.png"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="Ezzy Project"
-              />
-            </div>
-            {/* Item 5 */}
-            <div className="hidden duration-200 ease-linear" data-carousel-item>
-              <img
-                src="/Images/ezzy.png"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="Ezzy Project"
-              />
-            </div>
-          </div>
+          <Carousel
+            autoPlay
+            infiniteLoop
+            showThumbs={false}
+            dynamicHeight
+          >
+            {images.map((image) => (
+              <div key={image.id}>
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={800}
+                  height={600}
+                  layout="responsive"
+                  className="w-full h-auto"
+                />
+                <p className="legend">{image.alt}</p>
+              </div>
+            ))}
+          </Carousel>
           {/* Slider controls */}
           <button
             type="button"

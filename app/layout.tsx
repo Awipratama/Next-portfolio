@@ -6,6 +6,8 @@ import "./globals.css";
 import MainNavbar from "@/components/MainNavbar";
 import LeftSidebar from "@/components/LeftSideBar";
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

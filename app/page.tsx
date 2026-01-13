@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="flex relative main-page w-full min-h-screen items-center justify-center font-sans">
         <FloatingShapes />
-        <main className="flex max-w-[1150px] min-h-screen w-full items-center justify-between py-20">
+        <main className="flex max-w-[1150px] min-h-screen w-full items-center justify-between pt-10">
           <div className="text-section flex flex-col w-1/2 pr-10">
             <h1 className="text-[48px]/14 font-bold mb-6">
               Hi, I'm Awipratama <br /> an FrontEnd Web Developer

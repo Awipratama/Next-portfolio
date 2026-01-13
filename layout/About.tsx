@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="about-section flex w-full min-h-screen items-center justify-center font-sans py-20 bg-[#0c1b3c]"
+      className="about-section flex w-full items-center justify-center font-sans pt-10 bg-[#0c1b3c]"
     >
       <div className="about-container max-w-[1150px] gap-10 flex my-10">
         <FloatingShapes2 />

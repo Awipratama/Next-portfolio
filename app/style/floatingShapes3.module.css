@@ -28,7 +28,7 @@
 
 /* Circle */
 .circle {
-  top: 1750px;
+  top: 1890px;
   right: 30%;
   animation-duration: 9s;
 }
@@ -38,23 +38,23 @@
   font-size: 42px;
   font-weight: 300;
   color: white;
-  top: 1850px;
+  top: 1550px;
   right: 12%;
   animation-duration: 6s;
 }
 
 /* Square */
 .square {
-  top: 1800px;
-  left: 15%;
+  top: 1600px;
+  left: 6%;
   animation-duration: 5s;
   transform: rotate(15deg);
 }
 
 /* Diamond */
 .diamond {
-  top: 1700px;
-  right: 50%;
+  top: 1880px;
+  right: 71%;
   animation-duration: 4s;
   z-index: 99;
 }

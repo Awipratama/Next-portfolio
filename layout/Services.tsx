@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <section className="services-section bg-[#0c1b3c] flex justify-center w-full pt-10">
       <FloatingShapes3 />
-      <div className="service-container flex flex-col max-w-[1150px] my-10">
+      <div className="service-container flex flex-col max-w-[1150px]">
         <h2 className="text-md font-bold text-center uppercase mt-16">
           Services
         </h2>

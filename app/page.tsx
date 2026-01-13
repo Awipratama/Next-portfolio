@@ -2,6 +2,7 @@ import FloatingShapes from "@/components/FloatingShapes";
 import About from "@/layout/About";
 import Services from "@/layout/Services";
 import Portfolio from "@/layout/Portfolio";
+import CTA from "@/layout/CTAHire";
 
 export default function Home() {
   return (
@@ -45,6 +46,9 @@ export default function Home() {
       {/* Start of Portfolio Section */}
       <Portfolio />
       {/* End of Portfolio Section */}
+      {/* Start of CTA Section */}
+      <CTA />
+      {/* End of CTA Section */}
     </section>
   );
 }

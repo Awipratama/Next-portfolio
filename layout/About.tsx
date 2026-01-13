@@ -6,7 +6,7 @@ export default function About() {
       id="about"
       className="about-section flex w-full items-center justify-center font-sans pt-10 bg-[#0c1b3c]"
     >
-      <div className="about-container max-w-[1150px] gap-10 flex my-10">
+      <div className="about-container max-w-[1150px] gap-10 flex">
         <FloatingShapes2 />
         <div className="about-image relative flex items-center justify-center">
           <img

@@ -139,4 +139,8 @@ body a {
   -moz-box-shadow: 0px 0px 75px 10px rgba(79, 70, 229, 0.75);
 }
 
-/* About Section */
+/* CTA Section */
+.CTA-container {
+  background: #0E21A0;
+background: linear-gradient(90deg,rgba(14, 33, 160, 1) 0%, rgba(77, 47, 178, 1) 60%, rgba(177, 83, 215, 1) 80%, rgba(243, 117, 194, 1) 95%);
+}

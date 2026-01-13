@@ -19,8 +19,8 @@ const images: CarouselImage[] = [
 
 export default function Portfolio() {
   return (
-    <section className="portfolio bg-[#0c1b3c] w-full pt-10">
-      <div className="portfolio-container mx-auto max-w-[1150px] my-10 w-full">
+    <section className="portfolio bg-[#0c1b3c] w-full pt-20">
+      <div className="portfolio-container mx-auto max-w-[1150px] w-full">
         <h2 className="text-3xl text-center font-bold mb-6">My Portfolio</h2>
         <div
           id="animation-carousel"
@@ -51,12 +51,12 @@ export default function Portfolio() {
           {/* Slider controls */}
           <button
             type="button"
-            className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-3 cursor-pointer group focus:outline-none"
             data-carousel-prev
           >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-transparent">
               <svg
-                className="w-5 h-5 text-white rtl:rotate-180"
+                className="w-7 h-7 text-black rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -77,12 +77,12 @@ export default function Portfolio() {
           </button>
           <button
             type="button"
-            className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-3 cursor-pointer group focus:outline-none"
             data-carousel-next
           >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-transparent">
               <svg
-                className="w-5 h-5 text-white rtl:rotate-180"
+                className="w-7 h-7 text-black rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

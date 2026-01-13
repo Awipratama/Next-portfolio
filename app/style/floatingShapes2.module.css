@@ -21,14 +21,14 @@
 
 /* Triangle */
 .triangle {
-  top: 1550px;
+  top: 1410px;
   left: 20%;
   animation-duration: 8s;
 }
 
 /* Circle */
 .circle {
-  top: 1500px;
+  top: 1350px;
   right: 20%;
   animation-duration: 9s;
 }
@@ -45,23 +45,23 @@
 
 /* Square */
 .square {
-  top: 900px;
-  left: 5%;
+  top: 800px;
+  left: 7%;
   animation-duration: 5s;
   transform: rotate(15deg);
 }
 
 /* Diamond */
 .diamond {
-  top: 950px;
-  right: 50%;
+  top: 830px;
+  right: 60%;
   animation-duration: 4s;
   z-index: 99;
 }
 
 /* Wave line */
 .wave {
-  top: 1550px;
+  top: 1400px;
   left: 50%;
   transform: translateX(-50%);
   animation-duration: 7s;

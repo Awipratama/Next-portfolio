@@ -38,9 +38,9 @@ export default function About() {
           </div>
           <a
             href="#"
-            className="text-lg rounded-2xl px-6 py-4 mt-6 w-60 bg-[#4F46E5] hover:bg-[#6366F1]"
+            className="text-lg rounded-2xl px-6 py-4 mt-6 w-50 bg-[#4F46E5] hover:bg-[#6366F1]"
           >
-            Download Resume <strong>&rarr;</strong>
+            Download CV <strong>&rarr;</strong>
           </a>
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function Services() {
         <h2 className="text-md font-bold text-center uppercase mt-16">
           Services
         </h2>
-        <h5 className="text-[48px] text-center mb-12 font-semibold">
+        <h5 className="text-[42px] text-center mb-12 font-semibold">
           Expertise Service! Let's Check It Out
         </h5>
         <div className="services-grid grid grid-cols-3 gap-6">

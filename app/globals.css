@@ -8,6 +8,10 @@ Secondary color: #4F46E5
 Background color: #0D0F1A 
 Text color: #F5F5F5 */
 
+html, body {
+  scroll-behavior: smooth !important;
+}
+
 body h1,
 body h2,
 body h3,
@@ -140,7 +144,7 @@ body a {
 }
 
 /* CTA Section */
-.CTA-container {
-  background: #0E21A0;
-background: linear-gradient(90deg,rgba(14, 33, 160, 1) 0%, rgba(77, 47, 178, 1) 60%, rgba(177, 83, 215, 1) 80%, rgba(243, 117, 194, 1) 95%);
-}
+/* .CTA-container {
+  background: #4F46E5;
+  background: linear-gradient(270deg,rgba(79, 70, 229, 1) 0%, rgba(101, 164, 197, 1) 75%, rgba(166, 224, 255, 1) 100%);
+} */

@@ -20,11 +20,11 @@ const images: CarouselImage[] = [
 export default function Portfolio() {
   return (
     <section className="portfolio bg-[#0c1b3c] w-full pt-20">
-      <div className="portfolio-container mx-auto max-w-[1150px] w-full">
-        <h2 className="text-3xl text-center font-bold mb-6">My Portfolio</h2>
+      <div className="portfolio-container rounded-2xl mx-auto max-w-[1150px] w-full">
+        <h2 className="text-[42px] text-center font-semibold mb-6">My Portfolio</h2>
         <div
           id="animation-carousel"
-          className="relative w-full"
+          className="relative w-full rounded-2xl"
           data-carousel="slide"
         >
           {/* Carousel wrapper */}

@@ -1,5 +1,7 @@
 import FloatingShapes2 from "@/components/FloatingShapes2";
 
+import { FaArrowRight } from "react-icons/fa";
+
 export default function About() {
   return (
     <section
@@ -38,9 +40,9 @@ export default function About() {
           </div>
           <a
             href="#"
-            className="text-lg rounded-2xl px-6 py-4 mt-6 w-50 bg-[#4F46E5] hover:bg-[#6366F1]"
+            className="text-lg rounded-2xl px-6 py-4 mt-6 w-54 bg-[#4F46E5] hover:bg-[#6366F1]"
           >
-            Download CV <strong>&rarr;</strong>
+            Download CV <FaArrowRight className="inline ml-2" />
           </a>
         </div>
       </div>

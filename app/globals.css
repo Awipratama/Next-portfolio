@@ -18,10 +18,13 @@ body h3,
 body h4,
 body h5,
 body h6,
-body p,
 body a {
   font-family: "Poppins", sans-serif;
   color: #f5f5f5;
+}
+
+body p {
+  font-family: "Poppins", sans-serif;
 }
 
 .main-page {
@@ -148,3 +151,32 @@ body a {
   background: #4F46E5;
   background: linear-gradient(270deg,rgba(79, 70, 229, 1) 0%, rgba(101, 164, 197, 1) 75%, rgba(166, 224, 255, 1) 100%);
 } */
+
+/* Portfolio Section */
+.carousel-peek-wrapper .carousel {
+  overflow: visible !important;
+  display: flex !important;
+  flex-direction: column-reverse;
+}
+.carousel-peek-wrapper .carousel .slide {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.carousel-peek-wrapper .carousel .slide.selected {
+  opacity: 1;
+  transform: scale(1.04);
+}
+.carousel-peek-wrapper .control-dots {
+  position: relative !important;
+  margin-top: 14px !important;
+}
+.control-arrow {
+  height: 499px;
+}
+.control-arrow:hover {
+  background: transparent !important;
+}
+.carousel-text {
+  font-size: 24px;
+  font-weight: 500;
+}

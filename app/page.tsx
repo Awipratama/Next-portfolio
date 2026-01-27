@@ -1,8 +1,12 @@
+"use client";
+
 import FloatingShapes from "@/components/FloatingShapes";
 import About from "@/layout/About";
 import Services from "@/layout/Services";
 import Portfolio from "@/layout/Portfolio";
 import CTA from "@/layout/CTAHire";
+
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -15,16 +19,21 @@ export default function Home() {
             <h1 className="text-[48px]/14 font-bold mb-6">
               Hi, I'm Awipratama <br /> an FrontEnd Web Developer
             </h1>
-            <p className="pb-8">
+            <p className="pb-8 text-white">
               I'm a passionate Front-End Developer with a strong interest in
               creating interactive and user-friendly web experiences.
             </p>
-            <a
-              className="text-center text-[18px] py-3 bg-[#4F46E5] hover:bg-[#6366F1] w-50 rounded-2xl"
-              href="#"
+            <button
+              onClick={() => {
+                const section = document.getElementById("about");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="relative cursor-pointer w-50 px-6 py-3 bg-[#4F46E5] text-white font-semibold rounded-lg overflow-hidden group focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:ring-offset-2 transition-all duration-300 hover:bg-[#6366F1]"
             >
-              Learn More
-            </a>
+              <span className="relative z-10">Learn More <FaArrowRight className="inline ml-2" /></span>
+              <div className="absolute inset-0 bg-lime-400 opacity-0 group-hover:opacity-30 group-hover:animate-ping rounded-lg"></div>
+              <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+            </button>
           </div>
           <div className="w-1/2">
             <img

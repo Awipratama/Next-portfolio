@@ -3,6 +3,9 @@
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 
+import { FaWordpress, FaReact, FaLaravel } from "react-icons/fa";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+
 interface CarouselImage {
   id: number;
   src: string;
@@ -20,11 +23,54 @@ const images: CarouselImage[] = [
 export default function Portfolio() {
   return (
     <section className="portfolio bg-[#0c1b3c] w-full pt-20">
-      <div className="portfolio-container rounded-2xl mx-auto max-w-[1150px] w-full">
-        <h2 className="text-[42px] text-center font-semibold mb-6">My Portfolio</h2>
+      <h2 className="text-[48px] text-center font-semibold mb-6">
+        My Portfolio
+      </h2>
+      <div className="skill-container mt-10 flex max-w-[1150px] mx-auto gap-4 justify-between">
+        <div className="heading-skill relative w-full">
+          <h3 className="sticky top-[120px] text-[42px] capitalize text-start">
+            The projects I create usually use
+          </h3>
+        </div>
+        <div className="logo-skill grid grid-cols-3 grid-rows-4 gap-2 w-full">
+          <div className="skill-item bg-transparent border border-gray-500 hover:bg-gray-500 duration-300 rounded-2xl flex justify-center items-center p-4 col-span-2 row-span-2 flex-col">
+            <FaWordpress className="text-[64px] text-white" />
+            <p className="text-white">Wordpress</p>
+          </div>
+          <div className="skill-item bg-transparent border border-gray-500 hover:bg-gray-500 duration-300 rounded-2xl flex justify-center items-center p-4 row-span-2 flex-col">
+            <RiNextjsFill className="text-[64px] text-black" />
+            <p>Next.JS</p>
+          </div>
+          <div className="skill-item bg-transparent border border-gray-500    hover:bg-gray-500 duration-300 rounded-2xl flex justify-center items-center p-4 flex-col">
+            <FaReact className="text-[64px] text-[#61DAFB]" />
+            <p className="text-[#61DAFB]">React.JS</p>
+          </div>
+          <div className="skill-item bg-transparent border border-gray-500 hover:bg-gray-500 duration-300 rounded-2xl flex justify-center items-center p-4 flex-col">
+            <img
+              src="/Logos/Figma Logo Full Color.png"
+              alt=""
+              className="w-16"
+            />
+            <p className="text-white">Figma</p>
+          </div>
+          <div className="skill-item bg-transparent border border-gray-500 hover:bg-gray-500 duration-300 rounded-2xl flex justify-center items-center p-4 flex-col">
+            <RiTailwindCssFill className="text-[64px] text-[#38BDF8]" />
+            <p className="text-[#38BDF8]">Tailwind CSS</p>
+          </div>
+          <div className="skill-item bg-transparent border border-gray-500 hover:bg-gray-500 duration-300 rounded-2xl flex justify-center items-center p-4 flex-col">
+            <img src="/Logos/vue-logo.png" alt="" />
+            <p className="text-white">Vue.JS</p>
+          </div>
+          <div className="skill-item bg-transparent border border-gray-500 hover:bg-gray-500 duration-300 rounded-2xl flex justify-center items-center p-4 col-span-2 gap-2">
+            <FaLaravel className="text-[64px] text-[#FF2D20]" />
+            <p className="text-[24px] text-[#FF2D20]">Laravel</p>
+          </div>
+        </div>
+      </div>
+      <div className="portfolio-container rounded-2xl mx-auto max-w-[1150px] w-full mt-10">
         <div
           id="animation-carousel"
-          className="relative w-full rounded-2xl"
+          className="carousel-peek-wrapper relative w-full rounded-2xl"
           data-carousel="slide"
         >
           {/* Carousel wrapper */}
@@ -32,7 +78,10 @@ export default function Portfolio() {
             autoPlay
             infiniteLoop
             showThumbs={false}
-            dynamicHeight
+            dynamicHeight={false}
+            showStatus={false}
+            centerMode
+            centerSlidePercentage={90}
           >
             {images.map((image) => (
               <div key={image.id}>
@@ -42,65 +91,12 @@ export default function Portfolio() {
                   width={800}
                   height={600}
                   layout="responsive"
-                  className="w-full h-auto"
+                  className="w-full h-auto object-cover rounded-2xl px-6"
                 />
-                <p className="legend">{image.alt}</p>
+                {/* <p className="absolute legend carousel-text text-start bottom-2 left-6 right-6 w-full z-10 p-4">{image.alt}</p> */}
               </div>
             ))}
           </Carousel>
-          {/* Slider controls */}
-          <button
-            type="button"
-            className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-3 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-transparent">
-              <svg
-                className="w-7 h-7 text-black rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m15 19-7-7 7-7"
-                />
-              </svg>
-              <span className="sr-only">Previous</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-3 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-base bg-transparent">
-              <svg
-                className="w-7 h-7 text-black rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m9 5 7 7-7 7"
-                />
-              </svg>
-              <span className="sr-only">Next</span>
-            </span>
-          </button>
         </div>
       </div>
     </section>

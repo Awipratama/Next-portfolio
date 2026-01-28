@@ -5,7 +5,7 @@ import { FaPaperPlane } from "react-icons/fa";
 export default function Contact() {
   return (
     <section id="contact" className="contact bg-[#0c1b3c] w-full pt-20 pb-20">
-      <div className="contact-container mx-auto max-w-[1150px] w-full flex items-center justify-between">
+      <div className="contact-container mx-auto max-w-[1150px] w-full flex items-center justify-between hover:shadow-[#4f47e6] hover:shadow-xl duration-500 rounded-2xl">
         <div className="contact-img relative content-end px-10">
           <div className="blur-content rounded-2xl overflow-hidden backdrop-blur-xl -mb-8 flex w-full justify-center py-6 gap-8">
             <div className="item-1">

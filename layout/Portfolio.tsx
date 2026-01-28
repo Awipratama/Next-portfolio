@@ -109,7 +109,7 @@ export default function Portfolio() {
       </div>
       <div className="skill-container mt-10 flex max-w-[1150px] mx-auto gap-4 justify-between">
         <div className="heading-skill relative w-full">
-          <h3 className="sticky top-[120px] text-[42px] capitalize text-start">
+          <h3 className="sticky top-[120px] text-[42px] capitalize text-start font-semibold">
             The projects I create usually use
           </h3>
         </div>

@@ -185,3 +185,21 @@ body p {
   font-size: 24px;
   font-weight: 500;
 }
+
+/* ============== Contact Section ============== */
+.contact-img {
+  width: 50%;
+  height: 500px;
+  background: url("/Images/illustration-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px 0px 0px 20px;
+}
+.contact-info {
+  height: 500px;
+  border-radius: 0px 20px 20px 0px;
+}
+.contact-img .blur-content {
+  background: rgba(255, 255, 255, 0.2);
+}

@@ -14,8 +14,8 @@ export default function Home() {
       {/* Hero Section */}
       <div className="flex relative main-page w-full min-h-screen items-center justify-center font-sans">
         <FloatingShapes />
-        <main className="flex max-w-[1150px] min-h-screen w-full items-center justify-between pt-10">
-          <div className="text-section flex flex-col w-1/2 pr-10">
+        <main className="flex max-w-[1150px] min-h-screen w-full justify-between pt-10">
+          <div className="text-section flex flex-col w-1/2 pr-10 justify-center">
             <h1 className="text-[48px]/14 font-bold mb-6">
               Hi, I'm Awipratama <br /> an FrontEnd Web Developer
             </h1>
@@ -35,10 +35,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             </button>
           </div>
-          <div className="w-1/2">
+          <div className="custom-image w-1/2 flex items-center">
             <img
               className="image-section rounded-full w-[80%] ml-auto"
-              src="/Images/profile-3.png"
+              src="/Images/FotoAwik2.png"
               alt=""
             />
           </div>

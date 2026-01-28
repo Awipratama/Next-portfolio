@@ -4,7 +4,7 @@ import Hero from "@/layout/Hero";
 import About from "@/layout/About";
 import Services from "@/layout/Services";
 import Portfolio from "@/layout/Portfolio";
-import CTA from "@/layout/CTAHire";
+import Contact from "@/layout/Contact";
 
 export default function Home() {
   return (
@@ -21,9 +21,9 @@ export default function Home() {
       {/* Start of Portfolio Section */}
       <Portfolio />
       {/* End of Portfolio Section */}
-      {/* Start of CTA Section */}
-      <CTA />
-      {/* End of CTA Section */}
+      {/* Start of Contact Section */}
+      <Contact />
+      {/* End of Contact Section */}
     </section>
   );
 }

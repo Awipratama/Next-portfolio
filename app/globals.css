@@ -103,7 +103,21 @@ body p {
   transform: rotate(25deg);
   animation: rotateFloat 10s linear infinite;
 }
+.image-section {
+  animation: floatImage 5.2s ease-in-out infinite;
+}
 /* ============== Animations ============== */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 @keyframes floatY {
   0% {
     transform: translateY(0px);

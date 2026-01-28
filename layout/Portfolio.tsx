@@ -22,7 +22,7 @@ const images: CarouselImage[] = [
 
 export default function Portfolio() {
   return (
-    <section className="portfolio bg-[#0c1b3c] w-full pt-20">
+    <section id="portfolio" className="portfolio bg-[#0c1b3c] w-full pt-20">
       <h2 className="text-[48px] text-center font-semibold mb-6">
         My Portfolio
       </h2>

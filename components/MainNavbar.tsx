@@ -42,7 +42,7 @@ export default function MainNavbar() {
             </a>
           </li>
           <li>
-            <a className="nav-fonts" href="#">
+            <a className="nav-fonts" href="#portfolio">
               My Portfolio
             </a>
           </li>

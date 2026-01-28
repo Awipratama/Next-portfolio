@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <div className="flex relative main-page w-full min-h-screen items-center justify-center font-sans">
+    <section id="home" className="flex relative main-page w-full min-h-screen items-center justify-center font-sans">
       <FloatingShapes />
       <main className="flex max-w-[1150px] min-h-screen w-full justify-between pt-10">
         <motion.div
@@ -51,6 +51,6 @@ export default function Hero() {
           />
         </motion.div>
       </main>
-    </div>
+    </section>
   );
 }

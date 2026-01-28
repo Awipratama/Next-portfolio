@@ -26,6 +26,38 @@ export default function Portfolio() {
       <h2 className="text-[48px] text-center font-semibold mb-6">
         My Portfolio
       </h2>
+      <div className="portfolio-container rounded-2xl mx-auto max-w-[1150px] w-full mt-10">
+        <div
+          id="animation-carousel"
+          className="carousel-peek-wrapper relative w-full rounded-2xl"
+          data-carousel="slide"
+        >
+          {/* Carousel wrapper */}
+          <Carousel
+            autoPlay
+            infiniteLoop
+            showThumbs={false}
+            dynamicHeight={false}
+            showStatus={false}
+            centerMode
+            centerSlidePercentage={90}
+          >
+            {images.map((image) => (
+              <div key={image.id}>
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={800}
+                  height={600}
+                  layout="responsive"
+                  className="w-full h-auto object-cover rounded-2xl px-6"
+                />
+                {/* <p className="absolute legend carousel-text text-start bottom-2 left-6 right-6 w-full z-10 p-4">{image.alt}</p> */}
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </div>
       <div className="skill-container mt-10 flex max-w-[1150px] mx-auto gap-4 justify-between">
         <div className="heading-skill relative w-full">
           <h3 className="sticky top-[120px] text-[42px] capitalize text-start">
@@ -65,38 +97,6 @@ export default function Portfolio() {
             <FaLaravel className="text-[64px] text-[#FF2D20]" />
             <p className="text-[24px] text-[#FF2D20]">Laravel</p>
           </div>
-        </div>
-      </div>
-      <div className="portfolio-container rounded-2xl mx-auto max-w-[1150px] w-full mt-10">
-        <div
-          id="animation-carousel"
-          className="carousel-peek-wrapper relative w-full rounded-2xl"
-          data-carousel="slide"
-        >
-          {/* Carousel wrapper */}
-          <Carousel
-            autoPlay
-            infiniteLoop
-            showThumbs={false}
-            dynamicHeight={false}
-            showStatus={false}
-            centerMode
-            centerSlidePercentage={90}
-          >
-            {images.map((image) => (
-              <div key={image.id}>
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={800}
-                  height={600}
-                  layout="responsive"
-                  className="w-full h-auto object-cover rounded-2xl px-6"
-                />
-                {/* <p className="absolute legend carousel-text text-start bottom-2 left-6 right-6 w-full z-10 p-4">{image.alt}</p> */}
-              </div>
-            ))}
-          </Carousel>
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import About from "@/layout/About";
 import Services from "@/layout/Services";
 import Portfolio from "@/layout/Portfolio";
 import Contact from "@/layout/Contact";
+import Footer from "@/layout/Footer";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
       {/* Start of Contact Section */}
       <Contact />
       {/* End of Contact Section */}
+      {/* Start of Footer Section */}
+      <Footer />
+      {/* End of Footer Section */}
     </section>
   );
 }

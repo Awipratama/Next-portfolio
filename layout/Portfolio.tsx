@@ -120,9 +120,9 @@ export default function Portfolio() {
             <div
               key={i}
               className={`
-            skill-item rounded-2xl flex justify-center items-center p-4 flex-col gap-2 border duration-500
+            skill-item rounded-2xl flex justify-center items-center p-4 flex-col gap-2 border duration-400
             ${skill.span}
-            ${active === i ? "bg-gray-500 border-gray-500" : "bg-transparent border-gray-500"}
+            ${active === i ? "bg-gray-500 border-gray-500" : "bg-[#202b50] border-gray-500"}
           `}
             >
               {skill.icon}
